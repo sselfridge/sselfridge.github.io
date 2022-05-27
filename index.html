@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <!-- adobe font kit -->
+    <link rel="stylesheet" href="https://use.typekit.net/zkk0tuh.css" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <script type="text/javascript" src="./script.js"></script>
+
+    <section>
+      <div class="logo">
+        <img id="logo" src="./assets/logoV1.svg" />
+        <h2>Coming May 26th 2023</h2>
+      </div>
+      <div id="infoBtn" class="button">Info</div>
+      <div id="contributeBtn" class="button">Feedback / Contribute</div>
+      <a href="https://www.instagram.com/sbmtchallenge/"
+        ><div id="insta"><img src="./assets/insta.svg" /></div
+      ></a>
+      <div></div>
+    </section>
+    <section id="infoSection">
+      <h1>What is <span class="sbmt">SBMT</span> ?</h1>
+      <article>
+        Inspired by the
+        <a href="http://www.smmtchallenge.com"
+          >Santa Monica Mountain Challenge</a
+        >
+        the <span class="sbmt">SBMT</span> is the same idea here in Santa
+        Barbara. <br />Memorial day weekend through Labor Day weekend, there
+        will be a running leader board of local Strava climbs.<br /><br />
+        Ranking is done 1st by number of segments completed, then total
+        cumulative time. <br /><br />We'll have sub categories so you can
+        compete against people you're competitive with.
+        <br />
+        <br />
+        I discovered the SMMT during COVID and really enjoyed it, plus it got me
+        to some areas of the Santa Monicas I probably wouldn't have done
+        otherwise. Hoping to bring something similar to SB!
+      </article>
+      <div id="contributeBtn2" class="button">Feedback / Contribute</div>
+    </section>
+    <section id="contributeSection">
+      <h1>Contribute</h1>
+      <article>
+        <div>
+          <ul>
+            <li>Have a segment suggestion?</li>
+            <li>Be part of the beta testing?</li>
+            <li>Want to help with coding?</li>
+            <li>Have any feedback or ideas for how to make this fun?</li>
+            <li>Got a good recipe you'd like to share?</li>
+          </ul>
+          <div class="contactList">
+            <a href="mailTo:Sam.Selfridge@gmail.com">Sam.Selfridge@gmail.com</a>
+            <a href="https://www.instagram.com/sbmtchallenge/">
+              @sbmtchallenge</a
+            >
+            <span>Type your message in the box below</span>
+          </div>
+        </div>
+        <div class="flexCol" id="submitArea">
+          <textarea
+            id="textArea"
+            placeholder="text here..."
+            maxlength="1000"
+            onchange="onTextChange()"
+            onkeydown="onTextChange()"
+          ></textarea>
+          <span class="characterCount">
+            <span id="textCount">1000</span> characters remaining
+          </span>
+          <div class="button" onclick="submit()">Submit</div>
+        </div>
+        <div class="hideElm" id="allDone">
+          <span
+            >Thanks for your submission! <br />If you left contact info I'll get
+            back to you.</span
+          >
+          <div class="button" onclick="bringTextBack()">
+            Wait, I had more...
+          </div>
+        </div>
+      </article>
+    </section>
+  </body>
+</html>
