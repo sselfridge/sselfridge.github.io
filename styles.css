@@ -32,7 +32,7 @@ header {
 }
 
 #submitArea {
-    margin-top: 50px;
+    /* margin-top: 50px; */
     justify-content: space-between;
     align-items: center;
 }
@@ -83,7 +83,8 @@ h1 {
 }
 
 h2 {
-    font-size: 1.8em;
+    font-size: 35px;
+    text-align: center;
 }
 
 article {
@@ -127,8 +128,14 @@ h1 .sbmt {
 
 .contactList>* {
     display: flex;
+    font-size: 24px;
+    font-weight: 800;
     flex-direction: column;
     align-items: center;
+}
+
+.contactList>a {
+    margin-bottom: 50px;
 }
 
 .characterCount {

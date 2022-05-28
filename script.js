@@ -10,7 +10,7 @@ window.onload = function () {
   btns.forEach((btn) =>
     document.getElementById(btn).addEventListener("click", scrollToArea)
   );
-  document.getElementById("textArea").addEventListener;
+  document.getElementById("textArea").addEventListener("keydown", onTextChange);
 };
 
 const scrollToArea = (e) => {
@@ -53,7 +53,6 @@ const onTextChange = () => {
   const ta = document.getElementById("textArea");
   const value = `${ta.value}`;
   const count = value.length;
-
   document.getElementById("textCount").innerText = 1000 - count;
 };
 
