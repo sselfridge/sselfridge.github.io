@@ -26,7 +26,7 @@ const submit = () => {
   const value = textArea.value;
   const sendVal = encodeURIComponent(value);
   fetch(
-    `http://www.mapper.bike/api/sbmt/submission/BikssesBeersBaby3a58a6bc3f6a?segment=${sendVal}`,
+    `https://www.mapper.bike/api/sbmt/submission/BikssesBeersBaby3a58a6bc3f6a?segment=${sendVal}`,
     { method: "GET", mode: "cors" }
   )
     .then((response) => response.json())
