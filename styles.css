@@ -114,9 +114,7 @@ h1 .sbmt {
 
 .button {
     padding: 20px 40px;
-    /* border: 3px solid white; */
     border-radius: 5px;
-    /* color: aqua; */
     background-color: black;
     cursor: pointer;
 }
