@@ -5,6 +5,7 @@ const targetMap = {
 };
 
 window.onload = function () {
+  console.info("Github Loaded");
   const btns = Object.keys(targetMap);
 
   btns.forEach((btn) =>
