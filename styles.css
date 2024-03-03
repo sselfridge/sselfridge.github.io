@@ -57,6 +57,10 @@ header {
     width: 75%;
 }
 
+#pwderStrava {
+    width: 215px
+}
+
 #contributeBtn2 {
     margin-bottom: 20px;
 }
