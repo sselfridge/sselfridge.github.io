@@ -148,6 +148,12 @@ h1 .sbmt {
     font-size: 12px;
 }
 
+.landingText {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
 
 @media only screen and (min-width: 500px) {
     body {
